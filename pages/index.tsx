@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "../components/Navbar";
-import Hero from "..//components/Hero";
+import Hero from "../components/Hero";
+import AboutUs from "../components/AboutUs";
+import Card from "../components/Card";
+import Why from "../components/Why";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +19,27 @@ const geistMono = Geist_Mono({
 export default function Home() {
   return (
 <div>
+
+      {/* <Navbar />  */}
       <Navbar />
-      <Hero /> 
+
+      {/* <Hero />  */}
+      <Hero/>
+
+
+      {/* <AboutUs />  */}
+      <AboutUs/>
+
+      {/* <Card />  */}
+      <Card/>
+
+
+
+      {/* <Why page />  */}
+<Why/>
+
+
+
+      
     </div>  );
 }
