@@ -3,10 +3,12 @@ import Image from 'next/image'
 
 const Why = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center bg-white p-6">
+    <div className="flex flex-col md:flex-row items-center justify-center bg-white p-6 mt-16">
       {/* Left Section */}
-      <div className="flex-1 space-y-6 left-50 w-96 ml-20 ">
-        <h2 className="text-2xl font-bold">Why <span className=' text-rose-600 underline'>Georgia Medi?</span></h2>
+      <div className="flex-1 space-y-6 left-50 w-96 ml-20">
+        <h2 className="text-2xl font-bold">
+          Why <span className="text-rose-600 underline">Georgia Medi?</span>
+        </h2>
         <div className="space-y-4">
           <div className="flex items-start space-x-3">
             <Image
@@ -19,7 +21,7 @@ const Why = () => {
             <div>
               <h3 className="font-semibold">Guaranteed Admission with Low Fees</h3>
               <p className="text-gray-600">
-                Admission to top MBBS universities in Uzbekistan with <br/>
+                Admission to top MBBS universities in Uzbekistan with <br />
                 affordable fees for Indian students.
               </p>
             </div>
@@ -36,7 +38,7 @@ const Why = () => {
             <div>
               <h3 className="font-semibold">Complete Support for Documentation</h3>
               <p className="text-gray-600">
-                We provide end-to-end support for the necessary <br/>
+                We provide end-to-end support for the necessary <br />
                 documentation required for MBBS admissions.
               </p>
             </div>
@@ -53,7 +55,7 @@ const Why = () => {
             <div>
               <h3 className="font-semibold">Affordable Fees</h3>
               <p className="text-gray-600">
-                Studying abroad becomes easy with low tuition fees and <br/>
+                Studying abroad becomes easy with low tuition fees and <br />
                 reasonable living costs.
               </p>
             </div>
@@ -70,8 +72,8 @@ const Why = () => {
             <div>
               <h3 className="font-semibold">Free Counseling & Career Guidance</h3>
               <p className="text-gray-600">
-                We offer personalized counseling and guidance to help <br/>
-                 students build a successful medical career.
+                We offer personalized counseling and guidance to help <br />
+                students build a successful medical career.
               </p>
             </div>
           </div>
@@ -91,7 +93,6 @@ const Why = () => {
           width={656.7}
           height={552}
         />
-        
       </div>
     </div>
   )

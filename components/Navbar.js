@@ -4,11 +4,11 @@ import Image from "next/image";
 
 const Frame = () => {
   return (
-    <header className="w-[1440px] h-[81px] bg-white shadow-[0px_4px_9.9px_0px_rgba(0,0,0,0.2)] flex items-center">
+    <header className="w-full max-w-[1440px] h-[81px] bg-white shadow-md flex items-center mx-auto px-6 overflow-hidden">
       {/* Logo */}
-      <div className="relative ml-[120px] w-[223px] h-[31px]">
+      <div className="w-[223px] h-[31px]">
         <Image
-          src="/Logo.png" // Replace 'logo.png' with your actual logo file in the public folder
+          src="/Logo.png"
           alt="Georgia Medi Logo"
           width={223}
           height={31}
@@ -16,49 +16,26 @@ const Frame = () => {
       </div>
 
       {/* Navigation Links */}
-      <nav className="flex gap-[50px] ml-[76px]">
-        <Link
-          href="/"
-          className="text-red-500 font-bold hover:text-red-600 h-[31px] flex items-center"
-        >
-          Home
-        </Link>
-        <Link
-          href="/about-us"
-          className="text-black hover:text-red-500 h-[31px] flex items-center"
-        >
-          About Us
-        </Link>
-        <Link
-          href="/universities"
-          className="text-black hover:text-red-500 h-[31px] flex items-center"
-        >
-          Universities
-        </Link>
-        <Link
-          href="/countries"
-          className="text-black hover:text-red-500 h-[31px] flex items-center"
-        >
-          Countries
-        </Link>
-        <Link
-          href="/blogs"
-          className="text-black hover:text-red-500 h-[31px] flex items-center"
-        >
-          Blogs
-        </Link>
-        <Link
-          href="/gallery"
-          className="text-black hover:text-red-500 h-[31px] flex items-center"
-        >
-          Gallery
-        </Link>
-        <Link
-          href="/contact-us"
-          className="text-black hover:text-red-500 h-[31px] flex items-center"
-        >
-          Contact Us
-        </Link>
+      <nav className="flex gap-10 ml-auto">
+        {[
+          { name: "Home", href: "/", active: true },
+          { name: "About Us", href: "/about-us" },
+          { name: "Universities", href: "/universities" },
+          { name: "Countries", href: "/countries" },
+          { name: "Blogs", href: "/blogs" },
+          { name: "Gallery", href: "/gallery" },
+          { name: "Contact Us", href: "/contact-us" },
+        ].map((link, index) => (
+          <Link
+            key={index}
+            href={link.href}
+            className={`${
+              link.active ? "text-red-500 font-bold" : "text-black"
+            } hover:text-red-500 h-[31px] flex items-center`}
+          >
+            {link.name}
+          </Link>
+        ))}
       </nav>
     </header>
   );

@@ -3,33 +3,26 @@ import Image from "next/image";
 
 export const AboutUs = () => {
   return (
-    <section className="relative h-screen bg-gray-100 flex items-center justify-center">
+    <section className="relative h-screen  flex items-center justify-center">
       {/* Main Container */}
       <div className="relative w-full h-full">
-        {/* Header Text - Why Study MBBS in Georgia? */}
+        {/* Header Image - Why Study MBBS in Georgia? */}
+        {/* Header Image - Why Study MBBS in Georgia? */}
         <div
           className="absolute flex justify-center items-center"
           style={{
             width: "620px",
             height: "62px",
             top: "23px",
-            left: "489px",
+            left: "450px", // Adjusted this value to move the image to the left
           }}
         >
-          <h1 className="text-[40px] font-semibold leading-[62px] tracking-wide font-roboto">
-            Why Study MBBS in{" "}
-            <span
-              style={{
-                color: "rgba(199, 24, 58, 1)", // Color for "Georgia"
-                textDecorationColor: "rgba(199, 24, 58, 1)", // Underline color
-                textDecorationLine: "underline",
-                textDecorationSkipInk: "none", // Ensures no gaps in underline
-              }}
-            >
-              Georgia
-            </span>
-            ?
-          </h1>
+          <Image
+            src="/assests/about.png" // Replace with the correct path to your image
+            alt="Why Study MBBS in Georgia"
+            width={620}
+            height={62}
+          />
         </div>
 
         {/* Left Section - Image 1 */}

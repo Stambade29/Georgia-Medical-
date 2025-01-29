@@ -5,6 +5,15 @@ import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
 import Card from "../components/Card";
 import Why from "../components/Why";
+import Service from "../components/Service";
+import Services from "../components/Services";
+import Students from "../components/Students";
+import Partner from "../components/partner";
+import Blog from "../components/Blog";
+import PhotoGallery from "../components/photogallery";
+import FAQ from "../components/FAQ";
+import Appform from "../components/Appform";
+import Footer from "../components/footer"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,28 +27,52 @@ const geistMono = Geist_Mono({
 
 export default function Home() {
   return (
-<div>
-
+    <div>
       {/* <Navbar />  */}
       <Navbar />
 
       {/* <Hero />  */}
-      <Hero/>
-
+      <Hero />
 
       {/* <AboutUs />  */}
-      <AboutUs/>
+      <AboutUs />
 
       {/* <Card />  */}
-      <Card/>
-
-
+      <Card />
 
       {/* <Why page />  */}
-<Why/>
+      <Why />
+
+      {/*<Service/>*/}
+
+      <Service/>
+
+      {/*<Services/> */}
+      <Services/>
 
 
 
+
+      {/*<Partner/>*/}
+      <Partner/>
+
+      {/*<Students/>*/}
+      <Students/>
+
+      {/*<Blog/> */}
+      <Blog/>
+
+    {/* Photo Gallery */}
+    <PhotoGallery />
+
+    {/* FAQ */}
+    <FAQ />
+    
+    {/* App Form */}
+    <Appform/>
       
-    </div>  );
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
 }
